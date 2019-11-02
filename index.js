@@ -5,7 +5,7 @@ const args = process.argv.slice(2);
 const query = args.shift();
 if(!query) {
     console.log('no search query provided');
-    exit(1);
+    return exit(1);
 }
 const q = query.toLowerCase();
 const p = args.shift() || process.cwd();
